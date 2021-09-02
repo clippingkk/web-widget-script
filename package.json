@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "snowpack dev",
         "build": "rollup -c rollup.config.js",
-        "release": "snowpack build && npm run build && cp ./public/bundle.js ./dist/",
+        "release": "snowpack build && npm run build && cp ./public/bundle.js ./dist/bundle.js",
         "test": "exit 0"
     },
     "repository": {
