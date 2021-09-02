@@ -1,2 +1,45 @@
+// TODO: media query
+
 .ck-clipping-card
-    padding 1rem
+  --logo-size 38px
+  --avatar-size 38px
+  --card-color linear-gradient(-30deg,#c9efd8,#f9ddff)
+  --card-shadow-color #c9efd8
+  padding 1rem
+  background-image var(--card-color)
+  max-width 480px
+  margin auto
+  border-radius 8px
+  box-shadow 4px 4px 4px var(--card-shadow-color);
+  transition .35s box-shadow
+  cursor pointer
+  &:hover
+    box-shadow 4px 4px 10px var(--card-shadow-color);
+
+  .ck-header
+    display flex
+    justify-content space-between
+    align-items center
+    .ck-profile
+      display flex
+      align-items center
+      .ck-avatar
+        width var(--avatar-size)
+        height var(--avatar-size)
+        border-radius 100%
+      .ck-profile-id
+        margin-left .5rem
+    .ck-logo
+      width var(--logo-size)
+      height var(--logo-size)
+  .ck-content
+    line-height 1.5
+    font-size 1.2rem
+    text-indent 2.4rem
+  .ck-author
+    text-align right
+    font-size .8rem
+  .ck-info
+    display block
+    text-align right
+    font-size .7rem

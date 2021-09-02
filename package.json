@@ -4,7 +4,7 @@
     "description": "A script that perform widget in web",
     "main": "index.js",
     "scripts": {
-        "dev": "parcel --port 2345 demo.html",
+        "dev": "snowpack dev",
         "build": "esbuild src/main.ts --minify --bundle --outfile=public/main.js",
         "test": "exit 0"
     },
@@ -21,7 +21,8 @@
     "homepage": "https://github.com/clippingkk/web-widget-script#readme",
     "devDependencies": {
         "esbuild": "^0.12.24",
-        "parcel-bundler": "^1.12.5",
+        "snowpack": "^3.8.8",
+        "snowpack-plugin-stylus": "^1.0.6",
         "stylus": "^0.54.8",
         "typescript": "^4.4.2"
     }
