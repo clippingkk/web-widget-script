@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "dev": "snowpack dev",
-        "build:js": "esbuild src/main.ts --minify --bundle --outfile=public/main.js",
         "build": "rollup -c rollup.config.js",
+        "release": "snowpack build && npm run build && cp ./public/bundle.js ./dist/",
         "test": "exit 0"
     },
     "repository": {
