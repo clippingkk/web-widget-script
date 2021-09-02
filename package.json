@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "dev": "snowpack dev",
-        "build": "esbuild src/main.ts --minify --bundle --outfile=public/main.js",
+        "build:js": "esbuild src/main.ts --minify --bundle --outfile=public/main.js",
+        "build": "rollup -c rollup.config.js",
         "test": "exit 0"
     },
     "repository": {
@@ -21,6 +22,10 @@
     "homepage": "https://github.com/clippingkk/web-widget-script#readme",
     "devDependencies": {
         "esbuild": "^0.12.24",
+        "postcss": "^8.3.6",
+        "rollup": "^2.37.1",
+        "rollup-plugin-esbuild": "^4.5.0",
+        "rollup-plugin-postcss": "^4.0.1",
         "snowpack": "^3.8.8",
         "snowpack-plugin-stylus": "^1.0.6",
         "stylus": "^0.54.8",
