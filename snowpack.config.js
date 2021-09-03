@@ -18,6 +18,7 @@ module.exports = {
     port: 2345
   },
   buildOptions: {
+    out: './dist'
     /* ... */
   },
 };
