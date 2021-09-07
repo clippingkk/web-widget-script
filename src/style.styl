@@ -1,10 +1,19 @@
 // TODO: media query
+@font-face {
+  font-family: 'lxgw';
+  font-weight: 400;
+  src: url('https://ck-cdn.annatarhe.cn/mShzFHKsrmLXAupxbjcnwScRwel464H1/LXGWWenKai-Regular.ttf')  format('truetype');
+}
 
 .ck-clipping-card
+  font-family lxgw, Lato,"Microsoft Jhenghei","Hiragino Sans GB","Microsoft YaHei",sans-serif
   --logo-size 38px
   --avatar-size 38px
-  --card-color linear-gradient(-30deg,#c9efd8,#f9ddff)
-  --card-shadow-color #c9efd8
+  font-display swap
+  // --card-color linear-gradient(-30deg,#c9efd8,#f9ddff)
+  // --card-shadow-color #c9efd8
+  --card-color: linear-gradient(225deg,#9cccfc 0,#e6cefd 99.54%)
+  --card-shadow-color #e6cefd
   padding 1rem
   background-image var(--card-color)
   max-width 480px
