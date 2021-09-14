@@ -12,17 +12,24 @@
   font-display swap
   // --card-color linear-gradient(-30deg,#c9efd8,#f9ddff)
   // --card-shadow-color #c9efd8
-  --card-color: linear-gradient(225deg,#9cccfc 0,#e6cefd 99.54%)
-  --card-shadow-color #e6cefd
+  // --card-color: linear-gradient(225deg, rgba(156, 204, 252, .5) 0,rgba(230, 206, 253, .5) 99.54%)
+  --card-color rgba(255, 255, 255, .4)
+  --card-shadow-color var(--card-color)
+  // --card-shadow-color rgba(230, 206, 253, .5)
   padding 1rem
-  background-image var(--card-color)
+  background var(--card-color)
+  // backdrop-filter blur(100px)
   max-width 480px
   margin 1rem auto
   border-radius 8px
   transition .35s box-shadow
   cursor pointer
+  &.ck-dark
+    --card-color rgba(0, 0, 0, .4)
+    --card-shadow-color var(--card-color)
+    color #fff
   &:hover
-    box-shadow 4px 4px 10px var(--card-shadow-color);
+    box-shadow 0px 0px 10px var(--card-shadow-color);
 
   .ck-header
     display flex
