@@ -5,4 +5,4 @@ export const WEBSITE_ENDPOINT = 'https://clippingkk.annatarhe.com'
 export const CDN_PREFIX = 'https://ck-cdn.annatarhe.cn'
 export const logoURL = CDN_PREFIX + '/ck-assets/logo.png'
 export const ROOT_SELECTOR_CLASS = 'ck-clipping-card'
-export const rootDOM = document.querySelector('.' + ROOT_SELECTOR_CLASS)!
+export const rootDOMs = document.querySelectorAll('.' + ROOT_SELECTOR_CLASS)!

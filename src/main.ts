@@ -1,7 +1,7 @@
 // TODO: metric
 
 import { Clipping, fetchClipping } from './api'
-import { CDN_PREFIX, logoURL, rootDOM, WEBSITE_ENDPOINT } from './common'
+import { CDN_PREFIX, logoURL, rootDOMs, WEBSITE_ENDPOINT } from './common'
 import './prefers-dark'
 import './style.styl'
 
@@ -30,7 +30,7 @@ function getHeaderDOM(clipping: Clipping) {
   return header
 }
 
-async function main() {
+async function main(rootDOM: Element) {
   const cidStr = rootDOM.getAttribute('data-cid')
   if (!cidStr) {
     return
@@ -48,4 +48,6 @@ async function main() {
   })
 }
 
-main()
+for (const dom of rootDOMs) {
+  main(dom)
+}
